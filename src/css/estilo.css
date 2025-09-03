@@ -69,3 +69,101 @@ body{
     background: rgba(0, 0, 0, 0.5);
     z-index: 1; /* Garante que a camado de sobreposição fique sobre a imagem*/
 }
+
+.banner-conteudo{ 
+    width: 600px;
+    position: relative;
+    z-index: 2;
+}
+
+.banner-titulo{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.banner-descricao{
+    font-size:1.2em;
+    margin-bottom:30px
+}
+
+.banner-assistir{
+    background: #e50914;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    margin: 10px;
+}
+
+.btn-lista{
+    background: #e50914;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: #fff;
+    border: none;
+    margin: 10px;
+}
+
+.banner-assistir:hover{
+    transition: 0.5s ease;
+    box-shadow: 5px 5px 8px #000;
+    transform: scale(110%);
+}
+
+.btn-lista:hover{
+    transition: 0.5s ease;
+    box-shadow: 5px 5px 8px #000;
+    transform: rotate(360deg);
+    transform: scale(110%);
+}
+
+.sessao-filmes{
+    padding: 20px;
+}
+
+.filme-titulo{
+    font-size:2em;
+    margin-bottom: 20px;
+}
+
+.carrossel{
+    position: relative;
+    overflow: hidden;
+}
+
+.carrossel img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3 ease-in-out;
+}
+
+.carrossel-lista{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-item{
+    min-width: 200px;
+    padding: 10px;
+}
+
+.btn-carrossel{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:rgba(0, 0, 0, 0.5);
+    border:none;
+    padding:10px;
+    cursor:pointer;
+}
+
+.btn-anterior{
+    left:0;
+}
+
+.btn-proximo{
+    right:0;
+}
